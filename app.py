@@ -4,6 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.svm import SVC
 from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 
 # Function to train and save the model if not already fitted
 def train_and_save_model():
@@ -65,9 +67,15 @@ if st.button("Classify"):
         if prediction[0] == "Iris-setosa":
             col1, col2 = st.columns(2)  # Create two columns
             with col1:
-                st.image("assets/setosa_1.jpeg", caption="Setosa Image 1", width=300)
+                img = mpimg.imread("assets/setosa_1.jpeg")
+                plt.imshow(img)
+                plt.axis('off')
+                st.pyplot(plt)
             with col2:
-                st.image("assets/setosa_2.jpeg", caption="Setosa Image 2", width=300)
+                img = mpimg.imread("assets/setosa_2.jpeg")
+                plt.imshow(img)
+                plt.axis('off')
+                st.pyplot(plt)
             st.markdown("""
             ### 🌼 Meet the Competitors!
             **Iris Setosa – The Petite Powerhouse 💜**
@@ -81,9 +89,15 @@ if st.button("Classify"):
         elif prediction[0] == "Iris-versicolor":
             col1, col2 = st.columns(2)  # Create two columns
             with col1:
-                st.image("assets/versicolor_1.jpeg", caption="Versicolor Image 1", width=300)
+                img = mpimg.imread("assets/versicolor_1.jpeg")
+                plt.imshow(img)
+                plt.axis('off')
+                st.pyplot(plt)
             with col2:
-                st.image("assets/versicolor_2.jpeg", caption="Versicolor Image 2", width=300)
+                img = mpimg.imread("assets/versicolor_2.jpeg")
+                plt.imshow(img)
+                plt.axis('off')
+                st.pyplot(plt)
             st.markdown("""
             ### 🌼 Meet the Competitors!
             **Iris Versicolor – The Balanced Beauty 💙**
@@ -97,9 +111,15 @@ if st.button("Classify"):
         elif prediction[0] == "Iris-virginica":
             col1, col2 = st.columns(2)  # Create two columns
             with col1:
-                st.image("assets/virginica_1.jpeg", caption="Virginica Image 1", width=300)
+                img = mpimg.imread("assets/virginica_1.jpeg")
+                plt.imshow(img)
+                plt.axis('off')
+                st.pyplot(plt)
             with col2:
-                st.image("assets/virginica_2.jpeg", caption="Virginica Image 2", width=300)
+                img = mpimg.imread("assets/virginica_2.jpeg")
+                plt.imshow(img)
+                plt.axis('off')
+                st.pyplot(plt)
             st.markdown("""
             ### 🌼 Meet the Competitors!
             **Iris Virginica – The Tall Queen 👑**
