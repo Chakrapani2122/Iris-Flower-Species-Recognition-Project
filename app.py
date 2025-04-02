@@ -65,9 +65,9 @@ if st.button("Classify"):
         if prediction[0] == "Iris-setosa":
             col1, col2 = st.columns(2)  # Create two columns
             with col1:
-                st.image("assets/setosa_1.jpeg", caption="Setosa Image 1", width=300)
+                st.image("assets/setosa_1.jpeg", caption="Setosa Image 1", use_column_width=True)
             with col2:
-                st.image("assets/setosa_2.jpeg", caption="Setosa Image 2", width=300)
+                st.image("assets/setosa_2.jpeg", caption="Setosa Image 2", use_column_width=True)
             st.markdown("""
             ### 🌼 Meet the Competitors!
             **Iris Setosa – The Petite Powerhouse 💜**
@@ -81,9 +81,9 @@ if st.button("Classify"):
         elif prediction[0] == "Iris-versicolor":
             col1, col2 = st.columns(2)  # Create two columns
             with col1:
-                st.image("assets/versicolor_1.jpeg", caption="Versicolor Image 1", width=300)
+                st.image("assets/versicolor_1.jpeg", caption="Versicolor Image 1", use_column_width=True)
             with col2:
-                st.image("assets/versicolor_2.jpeg", caption="Versicolor Image 2", width=300)
+                st.image("assets/versicolor_2.jpeg", caption="Versicolor Image 2", use_column_width=True)
             st.markdown("""
             ### 🌼 Meet the Competitors!
             **Iris Versicolor – The Balanced Beauty 💙**
@@ -97,9 +97,9 @@ if st.button("Classify"):
         elif prediction[0] == "Iris-virginica":
             col1, col2 = st.columns(2)  # Create two columns
             with col1:
-                st.image("assets/virginica_1.jpeg", caption="Virginica Image 1", width=300)
+                st.image("assets/virginica_1.jpeg", caption="Virginica Image 1", use_column_width=True)
             with col2:
-                st.image("assets/virginica_2.jpeg", caption="Virginica Image 2", width=300)
+                st.image("assets/virginica_2.jpeg", caption="Virginica Image 2", use_column_width=True)
             st.markdown("""
             ### 🌼 Meet the Competitors!
             **Iris Virginica – The Tall Queen 👑**
